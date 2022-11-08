@@ -13,8 +13,7 @@ GameObject:
   - component: {fileID: 23967449910616976}
   - component: {fileID: 5791374374548175335}
   - component: {fileID: 8793287217641705705}
-  - component: {fileID: -3583496787736293257}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Car_3
   m_TagString: Car
   m_Icon: {fileID: 0}
@@ -121,27 +120,6 @@ CapsuleCollider2D:
   m_Offset: {x: -0.038819164, y: -0.14102682}
   m_Size: {x: 2.424592, y: 2.424592}
   m_Direction: 0
---- !u!50 &-3583496787736293257
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1175599118711950}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!1 &1262073453158656
 GameObject:
   m_ObjectHideFlags: 0
@@ -153,7 +131,7 @@ GameObject:
   - component: {fileID: 4071379965466514}
   - component: {fileID: 33665010222420762}
   - component: {fileID: 23042836285917988}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: wheel_1_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -236,7 +214,7 @@ GameObject:
   - component: {fileID: 4853687492290174}
   - component: {fileID: 33172514705687532}
   - component: {fileID: 23166778398971708}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: wheel_2_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -319,7 +297,7 @@ GameObject:
   - component: {fileID: 4556190530372642}
   - component: {fileID: 33282296818612064}
   - component: {fileID: 23907324441684060}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: wheel_1_8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -402,7 +380,7 @@ GameObject:
   - component: {fileID: 4833938299319682}
   - component: {fileID: 33515025867064710}
   - component: {fileID: 23383547764311154}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: wheel_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}

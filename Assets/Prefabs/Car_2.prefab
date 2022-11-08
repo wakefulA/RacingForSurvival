@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4604878854447890}
   - component: {fileID: 33398068675708366}
   - component: {fileID: 23143927614406544}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: wheel_2_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 4253926387382786}
   - component: {fileID: 33352765189398758}
   - component: {fileID: 23040939303706512}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: wheel_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -177,7 +177,7 @@ GameObject:
   - component: {fileID: 4939417208956224}
   - component: {fileID: 33740961736926304}
   - component: {fileID: 23153007585845282}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: wheel_1_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -260,7 +260,7 @@ GameObject:
   - component: {fileID: 4041611678907114}
   - component: {fileID: 33303147567042718}
   - component: {fileID: 23747511979774238}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: wheel_1_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -345,8 +345,7 @@ GameObject:
   - component: {fileID: 23804383695937886}
   - component: {fileID: -4226684139789276168}
   - component: {fileID: 2368027752128593056}
-  - component: {fileID: 5882610767053799921}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Car_2
   m_TagString: Car
   m_Icon: {fileID: 0}
@@ -453,24 +452,3 @@ CapsuleCollider2D:
   m_Offset: {x: -0.038819164, y: -0.14102682}
   m_Size: {x: 2.424592, y: 2.424592}
   m_Direction: 0
---- !u!50 &5882610767053799921
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1850322742259794}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
