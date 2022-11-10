@@ -1,4 +1,6 @@
 ﻿using Player;
+using Services.Coroutine;
+using Services.SceneLoading;
 using UnityEngine;
 using Zenject;
 
@@ -9,7 +11,8 @@ namespace Infrastructure.Installers
         public override void InstallBindings()
         {
            Debug.LogError($"ProjectInstaller InstallBindings");
-           MoveServiceInstaller.Install(Container);
+           CoroutineRunnerInstaller.Install(Container);
+           SceneLoadingServiceInstaller.Install(Container);
          
         }
     }

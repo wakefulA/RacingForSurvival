@@ -1,16 +1,11 @@
 using UnityEngine;
 
-
-
-
 namespace Player
 {
     public class PlayerMove : MonoBehaviour, IPlayerMove
     {
         [SerializeField] private float _speed = 3f;
         [SerializeField] private Transform _transform;
-
-
 
         public void Update()
         {
@@ -20,17 +15,6 @@ namespace Player
             float hor = Input.GetAxisRaw("Horizontal");
             Vector3 dir = new Vector3(hor, 0, 0);
             _transform.Translate(dir.normalized * (Time.deltaTime * _speed));
-            
-           
         }
-
-        public void InstallBlinding()
-
-        {
-            
-        }
-       
-
-   
     }
 }
