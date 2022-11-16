@@ -8,6 +8,8 @@ namespace Car
 
         private void FixedUpdate()
         {
+            
+            
             transform.Translate(Vector3.back * (speed * Time.deltaTime));
         
             if(transform.position.y < -7)

@@ -1,15 +1,21 @@
+using System;
 using System.Collections;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace Car
 {
    public class CarSpawn : MonoBehaviour
    {
+      
       public GameObject[] cars;
       private float[] positions = {1.09f, 3.47f, -3.31f, -1.15f};
-   
+
+      
+
       private void Start()
       {
+         
          StartCoroutine(spawn());
       }
 

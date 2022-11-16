@@ -1,4 +1,5 @@
-﻿using Services.SceneLoading;
+﻿using Infrastructure.Launcher;
+using Services.SceneLoading;
 using UnityEngine;
 using UnityEngine.UI;
 using Zenject;
@@ -24,7 +25,9 @@ namespace Services.UI.Screen
 
         private void OnPlayButtonClicked()
         {
-            //_sceneLoadingService.Load(GameLauncher.SceneName);
+            
+            
+            _sceneLoadingService.Load(GameLauncher.SceneName);
             //TODO: Add  transition
         }
     }

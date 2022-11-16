@@ -4,5 +4,6 @@
     {
         public const string MenuScene = "MenuScene";
         public const string Game = "SampleScene";
+        public const string SecondScene = "SecondScene";
     }
 }

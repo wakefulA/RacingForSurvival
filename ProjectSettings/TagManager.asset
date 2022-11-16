@@ -45,3 +45,9 @@ TagManager:
   - name: Player
     uniqueID: 3944476371
     locked: 0
+  - name: Car
+    uniqueID: 524091411
+    locked: 0
+  - name: Canvas
+    uniqueID: 2762977199
+    locked: 0
