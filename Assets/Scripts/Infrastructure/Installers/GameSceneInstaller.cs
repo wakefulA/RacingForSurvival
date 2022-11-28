@@ -8,6 +8,7 @@ namespace Infrastructure.Installers
         public override void InstallBindings()
         {
             PauseServiceInstaller.Install(Container);
+           
         }
     }
 }

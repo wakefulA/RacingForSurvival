@@ -11,7 +11,7 @@ namespace Services.SceneLoading
         private readonly ICoroutineRunner _coroutineRunner;
         private BaseLauncher _launcher;
 
-        public  SceneLoadingService(ICoroutineRunner coroutineRunner)
+        public SceneLoadingService(ICoroutineRunner coroutineRunner)
         {
             _coroutineRunner = coroutineRunner;
         }
@@ -20,7 +20,6 @@ namespace Services.SceneLoading
         {
             _coroutineRunner.StartCoroutine(LoadAsync(sceneName));
             //AsyncOperation loadSceneAsync = SceneManager.LoadSceneAsync(sceneName);
-
         }
 
         public void SetLauncher(BaseLauncher launcher) =>

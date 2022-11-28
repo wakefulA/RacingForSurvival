@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace Player
 {
-    public class PlayerMove : MonoBehaviour, IPlayerMove
+    public class PlayerMove : MonoBehaviour
     {
         [SerializeField] private float _speed = 3f;
         [SerializeField] private Transform _transform;
