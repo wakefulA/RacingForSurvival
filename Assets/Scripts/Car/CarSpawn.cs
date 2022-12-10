@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using UnityEngine;
 using Random = UnityEngine.Random;
@@ -24,7 +23,6 @@ namespace Car
 
                 yield return new WaitForSeconds(2.5f);
             }
-            
         }
     }
 }

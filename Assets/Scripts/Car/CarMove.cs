@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 namespace Car
@@ -13,6 +12,8 @@ namespace Car
 
             if (transform.position.y < -7)
                 Destroy(gameObject);
+           
+
         }
     }
 }

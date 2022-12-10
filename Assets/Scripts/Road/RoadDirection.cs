@@ -1,23 +1,24 @@
-using Unity.Mathematics;
 using UnityEngine;
-using UnityEditor;
 
-public class RoadDirection : MonoBehaviour
+namespace Road
 {
-    public float speed = 1.5f;
-    public GameObject road;
-
-    private void Update()
+    public class RoadDirection : MonoBehaviour
     {
-        transform.Translate(Vector3.down * (speed * Time.deltaTime));
+        public float speed = 1.5f;
+        public GameObject road;
 
-        if (transform.position.y < -8f)
-
+        private void Update()
         {
-            Instantiate(road, new Vector3(0.0354f, 7.97f, 0), Quaternion.identity);
-            // EditorApplication.isPaused = true;
-            Destroy(gameObject);
+            transform.Translate(Vector3.down * (speed * Time.deltaTime));
 
+            if (transform.position.y < -8f)
+
+            {
+                Instantiate(road, new Vector3(0.0354f, 7.97f, 0), Quaternion.identity);
+                // EditorApplication.isPaused = true;
+                Destroy(gameObject);
+
+            }
         }
     }
 }

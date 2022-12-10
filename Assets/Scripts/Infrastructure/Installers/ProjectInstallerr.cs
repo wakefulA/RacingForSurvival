@@ -1,5 +1,4 @@
-﻿using Player;
-using Services.Coroutine;
+﻿using Services.Coroutine;
 using Services.SceneLoading;
 using UnityEngine;
 using Zenject;

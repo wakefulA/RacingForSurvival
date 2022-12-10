@@ -28,6 +28,7 @@ namespace Player
            if (GetComponent<PlayerHp>().CurrentHp <= 0 || Statistics.Instance.HPCount <=0)
 
                Destroy(gameObject);
+           
         }
     }
 }

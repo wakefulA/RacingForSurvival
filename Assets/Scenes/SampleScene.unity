@@ -999,11 +999,11 @@ GameObject:
   - component: {fileID: 830108051}
   - component: {fileID: 830108050}
   - component: {fileID: 830108054}
-  - component: {fileID: 830108055}
   - component: {fileID: 830108049}
   - component: {fileID: 830108053}
   - component: {fileID: 830108056}
   - component: {fileID: 830108057}
+  - component: {fileID: 830108058}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -1139,20 +1139,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _effect: {fileID: 403435711418714934, guid: 20bff783044dc5042ad587c40bf5efb6, type: 3}
   _hpPanel: {fileID: 74737299}
---- !u!114 &830108055
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 830108048}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99bd1abca27504741ab5ce4a586ccca4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _speed: 3
-  _transform: {fileID: 830108051}
 --- !u!114 &830108056
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1182,6 +1168,20 @@ MonoBehaviour:
   Iterator: 0
   HPCount: 3
   _playerHp: {fileID: 830108056}
+--- !u!114 &830108058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 830108048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99bd1abca27504741ab5ce4a586ccca4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _speed: 6
+  _transform: {fileID: 830108051}
 --- !u!1 &934218194
 GameObject:
   m_ObjectHideFlags: 0

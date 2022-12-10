@@ -1,4 +1,6 @@
-﻿using Systems.Pause;
+﻿using Player;
+using Player.PlayerHealth;
+using Systems.Pause;
 using Zenject;
 
 namespace Infrastructure.Installers
@@ -8,6 +10,7 @@ namespace Infrastructure.Installers
         public override void InstallBindings()
         {
             PauseServiceInstaller.Install(Container);
+            InputServiceInstaller.Install(Container);
            
         }
     }
