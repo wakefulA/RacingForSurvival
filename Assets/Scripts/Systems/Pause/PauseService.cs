@@ -12,6 +12,8 @@ namespace Systems.Pause
         //public static PauseService Instance => _instance;
         public bool IsPaused { get; private set; }
 
+        public GameObject _innerObject;
+
         //private void Awake()
         //{
         // _instance = this;

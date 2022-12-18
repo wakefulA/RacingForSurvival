@@ -1,4 +1,5 @@
 ﻿using System;
+using Unity.VisualScripting;
 
 namespace Systems.Pause
 {
@@ -6,5 +7,8 @@ namespace Systems.Pause
     {
         event Action<bool> OnChanged;
         bool IsPaused { get; }
+
+       
     }
+    
 }

@@ -1,4 +1,5 @@
-﻿using Services.Coroutine;
+﻿using Infrastructure.LoadingScreen;
+using Services.Coroutine;
 using Services.SceneLoading;
 using UnityEngine;
 using Zenject;
@@ -12,6 +13,7 @@ namespace Infrastructure.Installers
            Debug.LogError($"ProjectInstaller InstallBindings");
            CoroutineRunnerInstaller.Install(Container);
            SceneLoadingServiceInstaller.Install(Container);
+         
          
         }
     }

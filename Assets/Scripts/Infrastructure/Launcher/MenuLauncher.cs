@@ -1,4 +1,5 @@
-﻿using Services.SceneLoading;
+﻿using Infrastructure.LoadingScreen;
+using Services.SceneLoading;
 using UnityEngine;
 using Zenject;
 
@@ -11,19 +12,18 @@ namespace Infrastructure.Launcher
         private ISceneLoadingService _sceneLoadingService;
 
         [Inject]
-
         public void Construct(ISceneLoadingService sceneLoadingService)
         {
             _sceneLoadingService = sceneLoadingService;
         }
-        
+
         protected override void Launch()
         {
             _sceneLoadingService.SetLauncher(this);
 
-     
+
             Debug.LogError($"{nameof(MenuLauncher)} Launch");
-            
+
             IsReady = true;
         }
     }

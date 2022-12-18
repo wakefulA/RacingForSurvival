@@ -10,5 +10,6 @@ namespace Infrastructure.Launcher
         }
 
         public const string SceneName = SceneNames.Game;
+
     }
 }
