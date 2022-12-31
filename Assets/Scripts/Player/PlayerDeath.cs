@@ -16,15 +16,16 @@ namespace Player
             if (col.gameObject.CompareTag("Car")) ;
             {
                 Instantiate(_effect, transform.position, transform.rotation);
+                
                 FindObjectOfType<PlayerHp>().ApplyDamage(1);
                 if (_hpPanel != null)
                     Instantiate(_hpPanel, transform.position, transform.rotation);
-                Statistics.Instance.GetComponent<HpPanel>();
+                GetComponent<HpPanel>();
 
                 Destroy(col.gameObject);
             }
 
-            if (GetComponent<PlayerHp>().CurrentHp <= 0 || Statistics.Instance.HPCount <= 0)
+            if (GetComponent<PlayerHp>().CurrentHp <= 0 || FindObjectOfType<Statistics>(). HPCount <= 0)
 
                 Destroy(gameObject);
         }

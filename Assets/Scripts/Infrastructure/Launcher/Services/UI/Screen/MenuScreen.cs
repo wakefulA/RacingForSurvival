@@ -1,12 +1,7 @@
-﻿
-
-using Infrastructure.Launcher;
-using Services.SceneLoading;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
-using Zenject;
 
-namespace Services.UI.Screen
+namespace Infrastructure.Launcher.Services.UI.Screen
 {
     public class MenuScreen : MonoBehaviour
     {
@@ -37,8 +32,9 @@ namespace Services.UI.Screen
 
        private void OnPlayButtonClicked()
         {
+            
             //_menuScreen.SetActive(false);
-            _loadScreen.SetActive(true);
+           _loadScreen.SetActive(true);
 
             //_sceneLoadingService.Load(GameLauncher.SceneName);
             //TODO: Add  transition

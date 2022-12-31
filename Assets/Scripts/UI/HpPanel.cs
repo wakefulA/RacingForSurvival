@@ -20,8 +20,8 @@ namespace UI
         private void Start()
         {
             _playerHp.OnChanged += HpChanged;
-            HpChanged(Statistics.Instance.HPCount);
-            Statistics.Instance.OnHpChanged += HpChanged;
+            HpChanged(FindObjectOfType<Statistics>().HPCount);
+            FindObjectOfType<Statistics>(). OnHpChanged += HpChanged;
         }
 
         private void OnDestroy()

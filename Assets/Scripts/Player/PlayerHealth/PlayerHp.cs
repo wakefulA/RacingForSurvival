@@ -12,6 +12,8 @@ namespace Player.PlayerHealth
 
         
         public event Action<int> OnChanged;
+        
+        public event Action OnGameOverPlayer; 
 
         public int CurrentHp { get; private set; }
         public int MaxHp => _maxHp;
@@ -27,6 +29,7 @@ namespace Player.PlayerHealth
         {
             CurrentHp = Mathf.Max(0, CurrentHp - damage);
             OnChanged?.Invoke(CurrentHp);
+            OnGameOverPlayer?.Invoke();
         }
 
         public void ApplyHeal(int heal)

@@ -14,7 +14,7 @@ namespace Road
             if (transform.position.y < -8f)
 
             {
-                Instantiate(road, new Vector3(0.0354f, 7.97f, 0), Quaternion.identity);
+                Instantiate(road, new Vector3(0.546f, 10.04f, 0), Quaternion.identity);
                 // EditorApplication.isPaused = true;
                 Destroy(gameObject);
 

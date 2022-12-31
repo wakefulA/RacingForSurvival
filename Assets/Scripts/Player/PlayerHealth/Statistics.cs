@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace Player.PlayerHealth
 {
-    public class Statistics : SingletonMonoBehaviour<Statistics>
+    public class Statistics : MonoBehaviour
     {
 
         public int Iterator = 1;
