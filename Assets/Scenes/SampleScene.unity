@@ -1460,7 +1460,7 @@ GameObject:
   - component: {fileID: 490581769}
   - component: {fileID: 490581770}
   m_Layer: 6
-  m_Name: 'Wall '
+  m_Name: WallRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1474,11 +1474,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 490581766}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.6318836, y: -5.2929, z: 23.291828}
+  m_LocalPosition: {x: 0.568913, y: -6.7040358, z: 4.6038265}
   m_LocalScale: {x: 1, y: 1.6625, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1128340693}
+  m_Father: {fileID: 1704545985}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &490581769
@@ -1515,7 +1515,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 490581766}
-  m_BodyType: 2
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -1527,7 +1527,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 7
 --- !u!1001 &494142369
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2349,7 +2349,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.09426543, y: 0.039777756}
@@ -2430,7 +2430,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1128340693}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &830108053
 Rigidbody2D:
@@ -2825,7 +2825,7 @@ GameObject:
   - component: {fileID: 1128340693}
   - component: {fileID: 1128340692}
   - component: {fileID: 1128340694}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2851,6 +2851,7 @@ MonoBehaviour:
   _playerHp: {fileID: 830108056}
   _carFollow: {fileID: 830108048}
   _carMove: {fileID: 830108048}
+  _gameWinScreen: {fileID: 1908758230}
   _gameOverScreen: {fileID: 494142373}
 --- !u!4 &1128340693
 Transform:
@@ -2864,8 +2865,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1278794828}
-  - {fileID: 490581768}
   - {fileID: 830108051}
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -2883,9 +2882,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _carSpawn: {fileID: 1128340692}
-  _PlayerHp: {fileID: 830108056}
-  _statistics: {fileID: 830108057}
   _gameWinScreen: {fileID: 1908758230}
+  _gameOverScreen: {fileID: 494142373}
   _carFollow: {fileID: 1128340691}
   _carMove: {fileID: 1128340691}
 --- !u!1 &1134155314
@@ -3157,7 +3155,7 @@ GameObject:
   - component: {fileID: 1278794829}
   - component: {fileID: 1278794830}
   m_Layer: 6
-  m_Name: Wall
+  m_Name: WallLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3171,11 +3169,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1278794826}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.448116, y: -5.2855, z: 23.291828}
+  m_LocalPosition: {x: -8.511087, y: -6.696636, z: 4.6038265}
   m_LocalScale: {x: 1.0177, y: 1.7230932, z: 1.0177}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1128340693}
+  m_Father: {fileID: 1704545985}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1278794829
@@ -3212,7 +3210,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1278794826}
-  m_BodyType: 2
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -3224,7 +3222,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 7
 --- !u!1 &1539266001
 GameObject:
   m_ObjectHideFlags: 0
@@ -3392,6 +3390,39 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1704545984
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1704545985}
+  m_Layer: 6
+  m_Name: Wall
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1704545985
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1704545984}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.011087, y: -1.4884737, z: 18.77166}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1278794828}
+  - {fileID: 490581768}
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1743153901
 GameObject:
   m_ObjectHideFlags: 0

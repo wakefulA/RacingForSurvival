@@ -1,4 +1,5 @@
-﻿using Infrastructure.LoadingScreen;
+﻿
+using Infrastructure.Launcher.Services.HP;
 using Services.Coroutine;
 using Services.SceneLoading;
 using UnityEngine;
@@ -13,6 +14,9 @@ namespace Infrastructure.Installers
            Debug.LogError($"ProjectInstaller InstallBindings");
            CoroutineRunnerInstaller.Install(Container);
            SceneLoadingServiceInstaller.Install(Container);
+           HPServiceInstaller.Install(Container);
+           
+           
          
          
         }

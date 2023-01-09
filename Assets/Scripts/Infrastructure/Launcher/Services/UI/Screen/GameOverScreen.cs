@@ -1,4 +1,5 @@
-﻿using Player;
+﻿using Infrastructure.Launcher.Services.HP;
+using Player;
 using Player.PlayerHealth;
 using UnityEditor.SceneManagement;
 using UnityEngine;
@@ -14,6 +15,9 @@ namespace Infrastructure.Launcher.Services.UI.Screen
 
         [SerializeField] private GameObject _loadScreen;
         [SerializeField] private GameObject _newCell;
+
+
+        private HPService _hpService;
 
         // [SerializeField] private GameObject _loadScreen;
 
@@ -39,6 +43,10 @@ namespace Infrastructure.Launcher.Services.UI.Screen
 
 
             _loadScreen.SetActive(true);
+            
+            _hpService.RestartHP();
+            
+            
 
 
             //TODO: Add  transition

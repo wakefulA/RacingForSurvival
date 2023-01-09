@@ -1,5 +1,7 @@
-﻿using UnityEngine;
+﻿using Services.SceneLoading;
+using UnityEngine;
 using UnityEngine.UI;
+using Zenject;
 
 namespace Infrastructure.Launcher.Services.UI.Screen
 {
@@ -7,20 +9,17 @@ namespace Infrastructure.Launcher.Services.UI.Screen
     {
         [SerializeField] private Button _playButton;
         [SerializeField] private Button _quitButton;
-      
+        [SerializeField] private GameObject _menuScreenOff;
 
         [SerializeField] private GameObject _loadScreen;
-        
 
-       
+        private ISceneLoadingService _sceneLoadingService;
 
-        // private ISceneLoadingService _sceneLoadingService;
-        //
-        // [Inject]
-        // public void Construct(ISceneLoadingService sceneLoadingService)
-        // {
-        //     _sceneLoadingService = sceneLoadingService;
-        // }
+        [Inject]
+        public void Construct(ISceneLoadingService sceneLoadingService)
+        {
+            _sceneLoadingService = sceneLoadingService;
+        }
 
         private void Awake()
         {
@@ -28,15 +27,14 @@ namespace Infrastructure.Launcher.Services.UI.Screen
             _quitButton.onClick.AddListener(OnQuitButtonClicked);
         }
 
-       
-
-       private void OnPlayButtonClicked()
+        private void OnPlayButtonClicked()
         {
-            
             //_menuScreen.SetActive(false);
-           _loadScreen.SetActive(true);
+            _loadScreen.SetActive(true);
+            _menuScreenOff.SetActive(false);
 
-            //_sceneLoadingService.Load(GameLauncher.SceneName);
+
+            _sceneLoadingService.Load(GameLauncher.SceneName);
             //TODO: Add  transition
         }
 

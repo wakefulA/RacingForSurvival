@@ -20,10 +20,10 @@ MonoBehaviour:
     GuidHex: c6682b715a6a21d46980a2ba5a0acf89
   NeedOpenSceneOnStop: 1
   StopScene:
-    Name: SampleScene
-    Index: 2
-    Path: Assets/Scenes/SampleScene.unity
-    GuidHex: 2cda990e2423bbf4892e6590ba056729
+    Name: SecondScene
+    Index: 3
+    Path: Assets/Scenes/SecondScene.unity
+    GuidHex: b74abe8dc7a541147a0018f7382796dd
   AllScenes:
   - Name: BotstrapScene
     Index: 0
@@ -37,3 +37,7 @@ MonoBehaviour:
     Index: 2
     Path: Assets/Scenes/SampleScene.unity
     GuidHex: 2cda990e2423bbf4892e6590ba056729
+  - Name: SecondScene
+    Index: 3
+    Path: Assets/Scenes/SecondScene.unity
+    GuidHex: b74abe8dc7a541147a0018f7382796dd

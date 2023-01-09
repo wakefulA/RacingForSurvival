@@ -1,33 +1,38 @@
-﻿using System;
-using Player.PlayerHealth;
+﻿using Infrastructure.Launcher.Services.SceneLoading;
+using Services.SceneLoading;
 using UnityEngine;
+using Zenject;
 
 namespace Car
 {
     public class CarDeath : MonoBehaviour
     {
         [SerializeField] public CarSpawn _carSpawn;
-        [SerializeField] public PlayerHp _PlayerHp;
-        [SerializeField] private Statistics _statistics;
         [SerializeField] private GameObject _gameWinScreen;
+        [SerializeField] private GameObject _gameOverScreen;
         [SerializeField] private GameObject _carFollow;
         [SerializeField] private GameObject _carMove;
 
-        
+        private ISceneLoadingService _sceneLoadingService;
+
+        [Inject]
+        public void Construct(ISceneLoadingService sceneLoadingService)
+        {
+            _sceneLoadingService = sceneLoadingService;
+        }
 
         private void GameWin()
         {
-            // for (int i = 0; i < _carSpawn.cars.Length;)
-            {
-                _gameWinScreen.SetActive(true);
-                _carFollow.SetActive(false);
-                _carMove.SetActive(false);
-            }
+            
+            _sceneLoadingService.Load(SceneNames.SecondScene);
+            _gameWinScreen.SetActive(true);
+            _gameOverScreen.SetActive(false);
+            _carFollow.SetActive(false);
+            _carMove.SetActive(false);
         }
 
         private void Awake()
         {
-          
             _carSpawn.OnGameWinPlayer += GameWin;
         }
 
@@ -35,7 +40,5 @@ namespace Car
         {
             _carSpawn.OnGameWinPlayer -= GameWin;
         }
-
-      
     }
 }

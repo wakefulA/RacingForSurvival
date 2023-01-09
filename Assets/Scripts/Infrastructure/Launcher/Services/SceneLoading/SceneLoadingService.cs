@@ -1,10 +1,10 @@
 ﻿using System.Collections;
-using Infrastructure.Launcher;
 using Services.Coroutine;
+using Services.SceneLoading;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace Services.SceneLoading
+namespace Infrastructure.Launcher.Services.SceneLoading
 {
     public class SceneLoadingService : ISceneLoadingService
     {

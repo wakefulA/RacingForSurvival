@@ -97,6 +97,7 @@ GameObject:
   - component: {fileID: -3318773050624459412}
   - component: {fileID: 4853188180736774336}
   - component: {fileID: -4266674125976505245}
+  - component: {fileID: 1604024156005502036}
   m_Layer: 7
   m_Name: Car_1
   m_TagString: Car
@@ -212,12 +213,24 @@ CapsuleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.038819164, y: -0.14102682}
   m_Size: {x: 2.424592, y: 2.424592}
   m_Direction: 0
+--- !u!114 &1604024156005502036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1183083895199056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 209c89c5551b4f9e8c52a033e692563c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1367518079405656
 GameObject:
   m_ObjectHideFlags: 0

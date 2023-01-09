@@ -1,8 +1,9 @@
-﻿using Zenject;
+﻿using Infrastructure.Launcher.Services.SceneLoading;
+using Zenject;
 
 namespace Services.SceneLoading
 {
-    public  class SceneLoadingServiceInstaller : Installer<SceneLoadingServiceInstaller>
+    public class SceneLoadingServiceInstaller : Installer<SceneLoadingServiceInstaller>
     {
         public override void InstallBindings()
         {

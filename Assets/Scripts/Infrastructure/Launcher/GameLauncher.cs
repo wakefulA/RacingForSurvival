@@ -1,4 +1,5 @@
-﻿using Services.SceneLoading;
+﻿using Infrastructure.Launcher.Services.SceneLoading;
+using Services.SceneLoading;
 
 namespace Infrastructure.Launcher
 {
@@ -6,7 +7,7 @@ namespace Infrastructure.Launcher
     {
         protected override void Launch()
         {
-            //IsReady = true;
+            IsReady = true;
         }
 
         public const string SceneName = SceneNames.Game;
