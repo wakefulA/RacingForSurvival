@@ -22,6 +22,8 @@ namespace Infrastructure.LoadingScreen
         private IEnumerator AsyncLoad()
 
         {
+            
+            
             AsyncOperation operation = SceneManager.LoadSceneAsync(sceneID);
             while (!operation.isDone)
             {

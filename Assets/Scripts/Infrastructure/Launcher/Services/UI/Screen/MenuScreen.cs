@@ -7,6 +7,8 @@ namespace Infrastructure.Launcher.Services.UI.Screen
     {
         [SerializeField] private Button _playButton;
         [SerializeField] private Button _quitButton;
+        
+        [SerializeField] private GameObject _menuScreenOff;
       
 
         [SerializeField] private GameObject _loadScreen;
@@ -27,14 +29,17 @@ namespace Infrastructure.Launcher.Services.UI.Screen
             _playButton.onClick.AddListener(OnPlayButtonClicked);
             _quitButton.onClick.AddListener(OnQuitButtonClicked);
         }
-
-       
+        
 
        private void OnPlayButtonClicked()
         {
             
             //_menuScreen.SetActive(false);
            _loadScreen.SetActive(true);
+           
+           _menuScreenOff.SetActive(false);
+           
+           
 
             //_sceneLoadingService.Load(GameLauncher.SceneName);
             //TODO: Add  transition
