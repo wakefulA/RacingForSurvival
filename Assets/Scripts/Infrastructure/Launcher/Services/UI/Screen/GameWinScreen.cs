@@ -21,15 +21,8 @@ namespace Infrastructure.Launcher.Services.UI.Screen
 
         private void OnRestartButtonClicked()
         {
-            //_menuScreen.SetActive(false);
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 0);
             _newCell.SetActive(true);
-
-
-           
-
-
-            //TODO: Add  transition
         }
 
         private void OnQuitButtonClicked()

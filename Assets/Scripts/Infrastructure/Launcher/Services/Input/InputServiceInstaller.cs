@@ -1,6 +1,6 @@
 ﻿using Zenject;
 
-namespace Player.PlayerHealth
+namespace Infrastructure.Launcher.Services.Input
 {
     public class InputServiceInstaller : Installer<InputServiceInstaller>
 

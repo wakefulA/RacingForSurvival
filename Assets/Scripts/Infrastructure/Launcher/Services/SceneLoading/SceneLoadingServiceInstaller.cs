@@ -1,4 +1,5 @@
-﻿using Zenject;
+﻿using Infrastructure.Launcher.Services.SceneLoading;
+using Zenject;
 
 namespace Services.SceneLoading
 {

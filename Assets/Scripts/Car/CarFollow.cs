@@ -4,9 +4,9 @@ namespace Car
 {
     public class CarFollow : MonoBehaviour
     {
-        public float speed;
-
         [SerializeField] private Transform _target;
+
+        public float speed;
 
         private void FixedUpdate()
         {

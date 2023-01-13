@@ -1,6 +1,4 @@
-﻿using System;
-using UnityEngine;
-using UnityEngine.UIElements;
+﻿using UnityEngine;
 using Button = UnityEngine.UI.Button;
 
 namespace Infrastructure.Launcher.Services.UI.Screen
@@ -19,10 +17,10 @@ namespace Infrastructure.Launcher.Services.UI.Screen
             _quitButton.onClick.AddListener(OnQuitButton);
         }
 
-       private void Start()
-       {
+        private void Start()
+        {
             _pauseScreen.SetActive(false);
-       }
+        }
 
         private void OnQuitButton()
         {
@@ -33,8 +31,6 @@ namespace Infrastructure.Launcher.Services.UI.Screen
         {
             _menuScreenOnGameScene.SetActive(false);
             Time.timeScale = 1f;
-
-
         }
     }
 }

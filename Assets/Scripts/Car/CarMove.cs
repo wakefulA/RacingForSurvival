@@ -12,8 +12,6 @@ namespace Car
 
             if (transform.position.y < -7)
                 Destroy(gameObject);
-           
-
         }
     }
 }

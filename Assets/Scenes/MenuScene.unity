@@ -756,7 +756,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 982de3a8887740328f54b2edfe5e32cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneID: 2
   loadingImage: {fileID: 1411302728}
   progressText: {fileID: 1411302727}
 --- !u!1 &1533207466

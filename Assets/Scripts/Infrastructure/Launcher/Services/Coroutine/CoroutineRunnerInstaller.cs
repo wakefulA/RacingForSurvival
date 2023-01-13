@@ -1,4 +1,5 @@
-﻿using Zenject;
+﻿using Infrastructure.Launcher.Services.Coroutine;
+using Zenject;
 
 namespace Services.Coroutine
 {

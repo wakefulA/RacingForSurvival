@@ -1,4 +1,4 @@
-﻿namespace Player
+﻿namespace Infrastructure.Launcher.Services.Input
 {
     public interface IInputService
     {

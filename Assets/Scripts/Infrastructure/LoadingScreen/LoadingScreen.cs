@@ -10,24 +10,20 @@ namespace Infrastructure.LoadingScreen
     [Serializable]
     public class LoadingScreen : MonoBehaviour
     {
-        public int sceneID;
         public Image loadingImage;
         [SerializeField] TextMeshProUGUI progressText;
 
         public void Start()
         {
-            StartCoroutine(AsyncLoad());
+            StartCoroutine(AsyncLoad(sceneName: "SampleScene"));
         }
 
-        private IEnumerator AsyncLoad()
+        private IEnumerator AsyncLoad(string sceneName)
 
         {
-            
-            
-            AsyncOperation operation = SceneManager.LoadSceneAsync(sceneID);
+            AsyncOperation operation = SceneManager.LoadSceneAsync(sceneName);
             while (!operation.isDone)
             {
-                
                 float progress = operation.progress / 0.91f;
                 loadingImage.fillAmount = progress;
                 progressText.text = string.Format("{0:0}%", progress * 100); // прогресс без плавающей запятой
@@ -36,35 +32,5 @@ namespace Infrastructure.LoadingScreen
                 yield return null;
             }
         }
-
-        //[Inject]
-        // public void Construct(ILoadingScreenService loading)
-        //{
-        //   _loading = loading;
-        //}
-
-        //private readonly ICoroutineRunner _coroutineRunner;
-
-        // public LoadingScreen (ICoroutineRunner coroutineRunner)
-        //{
-        //    _coroutineRunner = coroutineRunner;
-        //}
-
-        //public void Load(string sceneName) =>
-        //   _coroutineRunner.StartCoroutine(AsyncLoad(sceneName));
-
-        // [Inject]
-
-        //  public void Construct(ILoadingScreenService loadingScreenService)
-        //{
-
-        //   _loadingScreenService = loadingScreenService;
-
-        //  }
-
-        //  [Header("Load scene")]
-        //  [SerializeField ]public int sceneID;
-
-        // private GameObject _loadingScreen;
     }
 }
