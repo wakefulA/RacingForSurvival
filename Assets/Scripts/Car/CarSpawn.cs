@@ -36,7 +36,7 @@ namespace Car
 
         public IEnumerator Spawn()
         {
-            for (int i = 0; i < 4; i++)
+            for (int i = 0; i < 10; i++)
             {
                 Instantiate(cars[Random.Range(0, cars.Length)], new Vector3(positions[Random.Range(0, 4)], 6.5f, 0),
                     Quaternion.Euler(new Vector3(-90, 360, 0)));
