@@ -1,5 +1,5 @@
 ﻿using Infrastructure.Launcher.Services.Input;
-using Player.PlayerHealth;
+using Mission;
 using Systems.Pause;
 using Zenject;
 
@@ -11,6 +11,7 @@ namespace Infrastructure.Installers
         {
             PauseServiceInstaller.Install(Container);
             InputServiceInstaller.Install(Container);
+            MissionChekerInstaller.Install(Container);
         }
     }
 }

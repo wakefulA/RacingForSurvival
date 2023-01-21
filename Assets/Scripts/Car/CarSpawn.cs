@@ -12,10 +12,11 @@ namespace Car
         [SerializeField] private GameObject _carFollow;
         [SerializeField] private GameObject _carMove;
         [SerializeField] private GameObject _gameOverScreen;
-       
 
         public GameObject[] cars;
         private float[] positions = {1.09f, 3.47f, -3.31f, -1.15f};
+
+        public int CountCar { get; private set; } = 5;
 
         public event Action OnGameWinPlayer;
 
@@ -36,7 +37,7 @@ namespace Car
 
         public IEnumerator Spawn()
         {
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < CountCar; i++)
             {
                 Instantiate(cars[Random.Range(0, cars.Length)], new Vector3(positions[Random.Range(0, 4)], 6.5f, 0),
                     Quaternion.Euler(new Vector3(-90, 360, 0)));
@@ -51,7 +52,7 @@ namespace Car
             }
         }
 
-        private void GameOver()
+        public void GameOver()
         {
             if (_playerHp.CurrentHp == 0)
             {

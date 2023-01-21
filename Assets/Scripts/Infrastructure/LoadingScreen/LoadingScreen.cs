@@ -18,7 +18,7 @@ namespace Infrastructure.LoadingScreen
             StartCoroutine(AsyncLoad(sceneName: "SampleScene"));
         }
 
-        private IEnumerator AsyncLoad(string sceneName)
+        public IEnumerator AsyncLoad(string sceneName)
 
         {
             AsyncOperation operation = SceneManager.LoadSceneAsync(sceneName);
